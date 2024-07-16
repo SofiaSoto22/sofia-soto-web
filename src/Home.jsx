@@ -1,18 +1,17 @@
 import {
   Box,
   Flex,
-  Heading,
   Text,
   Grid,
   GridItem,
   HStack,
   VStack,
-  Image,
-  Tooltip,
   Link,
+  Tooltip,
 } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
@@ -33,29 +32,7 @@ export default function Home() {
         borderColor={"white"}
       >
         <GridItem id="left">
-          <Image
-            id="img"
-            display={"none"}
-            height={"450px"}
-            src="/src/assets/imghome.jpg"
-            position={"absolute"}
-            zIndex={1}
-          ></Image>
-          <Box zIndex={2} position={"relative"}>
-            <Heading
-              fontFamily={"Cutive Mono"}
-              fontWeight={"bold"}
-              color={"white"}
-            >
-              Sofía Soto
-            </Heading>
-            <Text color={"white"}>Web Developer</Text>
-            <Box marginTop={"50px"} color={"white"}>
-              <Text className="hovertext">Home</Text>
-              <Text className="hovertext">Who am I</Text>
-              <Text className="hovertext">Projects</Text>
-            </Box>
-          </Box>
+          <Navbar />
         </GridItem>
 
         <GridItem position={"relative"}>

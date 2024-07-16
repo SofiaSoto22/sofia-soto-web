@@ -1,0 +1,28 @@
+{
+    "pics":[
+        {
+        "photo": "/artside/pic1.jpg",
+        "technique":"watercolor"
+      },
+      {
+        "photo": "/artside/pic2.jpg",
+        "technique":"watercolor"
+      },
+      {
+        "photo": "/artside/pic3.jpg",
+        "technique":"watercolor"
+      },
+      {
+        "photo": "/artside/pic4.jpg",
+        "technique":"watercolor"
+      },
+      {
+        "photo": "/artside/pic5.jpg",
+        "technique":"watercolor"
+      },
+      {
+        "photo": "/artside/pic6.jpg",
+        "technique":"watercolor"
+      }
+    ]
+}

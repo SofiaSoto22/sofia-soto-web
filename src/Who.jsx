@@ -1,15 +1,8 @@
-import {
-  Box,
-  Text,
-  Heading,
-  HStack,
-  Tooltip,
-  Grid,
-  GridItem,
-} from "@chakra-ui/react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
-import Quotes from "./components/Quotes";
+import { Box, Grid, GridItem, Button, VStack } from "@chakra-ui/react";
+
+import Navbar from "./components/Navbar.jsx";
+import { Link } from "react-router-dom";
+
 export default function Who() {
   return (
     <Box
@@ -30,24 +23,28 @@ export default function Who() {
         color={"white"}
       >
         <GridItem>
-          <Heading
-            fontFamily={"Cutive Mono"}
-            fontWeight={"bold"}
-            color={"white"}
-          >
-            Sofía Soto
-          </Heading>
-          <Text color={"white"}>Web Developer</Text>
-          <Box marginTop={"50px"} color={"white"}>
-            <Text className="hovertext">Home</Text>
-            <Text className="hovertext">Who am I</Text>
-            <Text className="hovertext">Projects</Text>
-            <Text className="hovertext">Contact</Text>
-          </Box>
+          <Navbar />
         </GridItem>
-        <GridItem alignContent={"center"}>
-          <Quotes></Quotes>
-        </GridItem>
+        <VStack marginTop={"100px"} spacing={10}>
+          <Link to={"/artside"}>
+            <Button
+              backgroundColor={"#C0C0C0"}
+              minWidth={"400px"}
+              minHeight={"100px"}
+            >
+              Art Side
+            </Button>
+          </Link>
+          <Link to={"/readingside"}>
+            <Button
+              backgroundColor={"#C0C0C0"}
+              minWidth={"400px"}
+              minHeight={"100px"}
+            >
+              Reading Side
+            </Button>
+          </Link>
+        </VStack>
       </Grid>
     </Box>
   );
