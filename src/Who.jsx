@@ -32,7 +32,7 @@ export default function Who() {
               minWidth={"400px"}
               minHeight={"100px"}
             >
-              Art Side
+              My Arty Side
             </Button>
           </Link>
           <Link to={"/readingside"}>
@@ -41,7 +41,7 @@ export default function Who() {
               minWidth={"400px"}
               minHeight={"100px"}
             >
-              Reading Side
+              My Reading Side
             </Button>
           </Link>
         </VStack>

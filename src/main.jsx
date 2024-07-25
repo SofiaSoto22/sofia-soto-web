@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/whoAmI",
+    path: "/who",
     element: <Who />,
   },
   {
@@ -38,7 +38,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/whoAmI" element={<Who />} />
+          <Route path="/who" element={<Who />} />
           <Route path="/artside" element={<Artside />} />
           <Route path="/readingside" element={<Readingside />} />
         </Routes>

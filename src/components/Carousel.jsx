@@ -29,7 +29,7 @@ export default function CarouselQuotes() {
     <Carousel responsive={responsive}>
       {quotes.map((quote) => (
         <Text textAlign={"center"} padding={"60px"}>
-          {quote.quote} <br />
+          "{quote.quote}" <br />
           {quote.book} - {quote.author}
         </Text>
       ))}

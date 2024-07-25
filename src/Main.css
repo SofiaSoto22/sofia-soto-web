@@ -21,5 +21,11 @@
   right: calc(-3% + 1px)
 }
 .no-scrollbar::-webkit-scrollbar { 
-  display: none; /* Safari and Chrome */
+  display: none; 
+}
+.active::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; 
+    content: '\f068'; 
+    margin-right: 8px;
 }

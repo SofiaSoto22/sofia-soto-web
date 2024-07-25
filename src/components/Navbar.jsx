@@ -1,5 +1,6 @@
 import { Box, Heading, Image, Text, VStack } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <Box>
@@ -17,12 +18,12 @@ export default function Navbar() {
         </Heading>
         <Text color={"white"}>Web Developer</Text>
         <VStack alignItems={"flex-start"} marginTop={"50px"} color={"white"}>
-          <Link to={"/"} className="hovertext">
+          <NavLink to={"/"} className="hovertext">
             Home
-          </Link>
-          <Link to={"/whoAmI"} className="hovertext">
+          </NavLink>
+          <NavLink to={"/who"} className="hovertext">
             Who am I
-          </Link>
+          </NavLink>
           <Text className="hovertext">Projects</Text>
         </VStack>
       </Box>
