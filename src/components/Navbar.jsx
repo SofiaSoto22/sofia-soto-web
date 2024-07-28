@@ -24,7 +24,9 @@ export default function Navbar() {
           <NavLink to={"/who"} className="hovertext">
             Who am I
           </NavLink>
-          <Text className="hovertext">Projects</Text>
+          <NavLink to={"/projects"} className="hovertext">
+            Projects
+          </NavLink>
         </VStack>
       </Box>
     </Box>

@@ -1,13 +1,4 @@
-import {
-  Grid,
-  Image,
-  Box,
-  Flex,
-  Button,
-  Text,
-  GridItem,
-  VStack,
-} from "@chakra-ui/react";
+import { Grid, Image, Box, Flex, Text, GridItem } from "@chakra-ui/react";
 import pics from "./pics.json";
 import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";

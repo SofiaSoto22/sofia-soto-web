@@ -13,7 +13,7 @@ export default function Who() {
       padding={"30px"}
     >
       <Grid
-        templateColumns="repeat(2, 1fr)"
+        templateColumns={["1fr", "1fr", "repeat(2, 1fr)"]}
         gap={10}
         position={"relative"}
         height={"100%"}
@@ -25,24 +25,14 @@ export default function Who() {
         <GridItem>
           <Navbar />
         </GridItem>
-        <VStack marginTop={"100px"} spacing={10}>
+        <VStack spacing={10} alignItems={"center"} justifyContent={"center"}>
           <Link to={"/artside"}>
-            <Button
-              backgroundColor={"#C0C0C0"}
-              minWidth={"400px"}
-              minHeight={"100px"}
-            >
+            <Button backgroundColor={"#C0C0C0"} minW={"300px"}>
               My Arty Side
             </Button>
           </Link>
           <Link to={"/readingside"}>
-            <Button
-              backgroundColor={"#C0C0C0"}
-              minWidth={"400px"}
-              minHeight={"100px"}
-            >
-              My Reading Side
-            </Button>
+            <Button backgroundColor={"#C0C0C0"}>My Reading Side</Button>
           </Link>
         </VStack>
       </Grid>

@@ -1,6 +1,10 @@
-.hovertext:hover{
+.hovertext:hover:before{
   font-weight: bold;
   cursor: pointer;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; 
+  content: '\f068'; 
+  margin-right: 8px;
 }
 .hoverimg:hover{
   cursor: pointer;
@@ -28,4 +32,7 @@
     font-weight: 900; 
     content: '\f068'; 
     margin-right: 8px;
+}
+.hoverproject:hover{
+  background-color: #242525;
 }
